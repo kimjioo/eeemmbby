@@ -8,18 +8,18 @@ echo "----------------v1.2 1.3 1.4 By @南梦宫------------"
 echo "----------------https://crackemby.mb6.top------------"
 echo "----------------web播放器开始------------"
 mv /var/packages/EmbyServer/target/system/Emby.Web.dll /var/packages/EmbyServer/target/system/Emby.Web.dll.bak
-wget -P /var/packages/EmbyServer/target/system/ --no-check-certificate https://act.jiawei.xin:10086/tmp/emby/4.7.13.0/linux_32_64/Emby.Web.dll
+wget -P /var/packages/EmbyServer/target/system/ --no-check-certificate https://github.com/kimjioo/eeemmbby/raw/main/Emby.Web.dll
 mv /var/packages/EmbyServer/target/system/MediaBrowser.Model.dll /var/packages/EmbyServer/target/system/MediaBrowser.Model.dll.bak
-wget -P /var/packages/EmbyServer/target/system/ --no-check-certificate https://act.jiawei.xin:10086/tmp/emby/4.7.13.0/linux_32_64/MediaBrowser.Model.dll
+wget -P /var/packages/EmbyServer/target/system/ --no-check-certificate https://github.com/kimjioo/eeemmbby/raw/main/MediaBrowser.Model.dll
 echo "----------------web核心完成------------"
 mv /var/packages/EmbyServer/target/system/dashboard-ui/modules/emby-apiclient/connectionmanager.js /var/packages/EmbyServer/target/system/dashboard-ui/modules/emby-apiclient/connectionmanager.js.bak
-wget -P /var/packages/EmbyServer/target/system/dashboard-ui/modules/emby-apiclient/ --no-check-certificate https://act.jiawei.xin:10086/tmp/emby/4.7.13.0/linux_32_64/dashboard-ui/modules/emby-apiclient/connectionmanager.js
+wget -P /var/packages/EmbyServer/target/system/dashboard-ui/modules/emby-apiclient/ --no-check-certificate https://github.com/kimjioo/eeemmbby/raw/main/connectionmanager.js
 mv /var/packages/EmbyServer/target/system/dashboard-ui/embypremiere/embypremiere.js /var/packages/EmbyServer/target/system/dashboard-ui/embypremiere/embypremiere.js.bak
-wget -P /var/packages/EmbyServer/target/system/dashboard-ui/embypremiere/ --no-check-certificate https://act.jiawei.xin:10086/tmp/emby/4.7.13.0/linux_32_64/dashboard-ui/embypremiere/embypremiere.js
+wget -P /var/packages/EmbyServer/target/system/dashboard-ui/embypremiere/ --no-check-certificate https://github.com/kimjioo/eeemmbby/raw/main/embypremiere.js
 echo "----------------web播放器完成------------"
 echo "----------------硬解部分开始----------------"
 mv /var/packages/EmbyServer/target/system/Emby.Server.Implementations.dll /var/packages/EmbyServer/target/system/Emby.Server.Implementations.dll.bak
-wget -P /var/packages/EmbyServer/target/system/ --no-check-certificate https://act.jiawei.xin:10086/tmp/emby/4.7.13.0/linux_32_64/Emby.Server.Implementations.dll
+wget -P /var/packages/EmbyServer/target/system/ --no-check-certificate https://github.com/kimjioo/eeemmbby/raw/main/Emby.Server.Implementations.dll
 echo "----------------硬解部分完成-----------"
 echo "----------------设置相关权限（DSM6版本会报错，无影响）----------------"
 chown -R emby:emby /var/packages/EmbyServer/target/system/
